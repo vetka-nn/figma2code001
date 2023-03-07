@@ -1,0 +1,24 @@
+/* CSS Document */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 133%;
+    color: #1E4844;
+}
+
+.header { 
+    background-color: #1E4844;
+    color: #ffffff;
+    height: 115px;
+}
