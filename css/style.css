@@ -359,10 +359,16 @@ p {
 	width: 53px;
 	overflow: hidden;
 	flex-grow: 1;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
 }
 
 .clientitem.active {
 	flex-grow: 12;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .clientitem:nth-child(3n+1) {
@@ -385,10 +391,11 @@ p {
 .clientitem.active img {
 	width: 90%;
 	transform: none;
-	position: relative;
+/*	position: absolute;
+	bottom: 80px;
+	margin: 0; */
 	left: 0;
-	top: 0;
-	margin: 25% auto;
+	top: auto;
 }
 
 .clientitemlink {
@@ -401,6 +408,10 @@ p {
 
 .active .clientitemlink {
 	display: block;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
 }
 
 .press-bottom {
