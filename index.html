@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
+	<script>
+		window.onload = function() {
+			const picts = document.querySelectorAll('.clientitem');
+			picts.forEach(item =>{ 
+				item.addEventListener('click', (e) =>{
+					picts.forEach(el=>{ el.classList.remove('active'); });
+					item.classList.add('active')
+				})
+			})
+		}
+	</script>
 </head>
 <body>
 
@@ -128,24 +139,59 @@
 				<p><a class="button" href="#">Shop our Products</a></p>
 			</div>
 		</section>
-		<section class="beige">
-			<div class="container beige-top">
-				<h5>Prismatic Press</h5>
-				<a href="#"><img src="img/clientlogo1.png" alt="client logo"></a>
-				<a href="#"><img src="img/clientlogo2.png" alt="client logo"></a>
-				<a href="#"><img src="img/clientlogo3.png" alt="client logo"></a>
-				<a href="#"><img src="img/clientlogo4.png" alt="client logo"></a>
-				<a href="#"><img src="img/clientlogo5.png" alt="client logo"></a>
-				<a href="#"><img src="img/clientlogo6.png" alt="client logo"></a>
-				<a href="#"><img src="img/clientlogo7.png" alt="client logo"></a>
-				<a href="#"><img src="img/clientlogo8.png" alt="client logo"></a>
+		<section class="press beige">
+			<h5>Prismatic Press</h5>
+			<div class="container press-top">
+				<div class="clientitem active"><a href="#"><img src="img/clientlogo1.png" alt="client logo"></a><a href="#" class="clientitemlink">Read the article</a></div>
+				<div class="clientitem"><a href="#"><img src="img/clientlogo2.png" alt="client logo"></a><a href="#" class="clientitemlink">Read the article</a></div>
+				<div class="clientitem"><a href="#"><img src="img/clientlogo3.png" alt="client logo"></a><a href="#" class="clientitemlink">Read the article</a></div>
+				<div class="clientitem"><a href="#"><img src="img/clientlogo4.png" alt="client logo"></a><a href="#" class="clientitemlink">Read the article</a></div>
+				<div class="clientitem"><a href="#"><img src="img/clientlogo5.png" alt="client logo"></a><a href="#" class="clientitemlink">Read the article</a></div>
+				<div class="clientitem"><a href="#"><img src="img/clientlogo6.png" alt="client logo"></a><a href="#" class="clientitemlink">Read the article</a></div>
+				<div class="clientitem"><a href="#"><img src="img/clientlogo7.png" alt="client logo"></a><a href="#" class="clientitemlink">Read the article</a></div>
+				<div class="clientitem"><a href="#"><img src="img/clientlogo8.png" alt="client logo"></a><a href="#" class="clientitemlink">Read the article</a></div>
 			</div>
-			<div class="container beige-bottom">
+			<div class="container press-bottom">
 				<p>"Helps me start each day off on the right food with a clear mind and steady energy- no coffee necessary"</p>
 				<p class="author">FORBES</p>
 			</div>
 		</section>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer-l lightgreen">
+				<div class="container">
+					<ul class="menu">
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Shipping & Returns</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Service</a></li>
+						<li><a href="#"><img src="img/ico-pint.svg" alt="Pinterest"></a> <a href="#"><img src="img/ico-inst.svg" alt="Instagram"></a></li>
+					</ul>
+					<p><img src="img/ico-banks.svg" alt="Banking"></p>
+					<p class="copyright">&copy; 2021, Prismatic Plants</p>
+  				</div>
+			</div>
+			<div class="footer-r beige">
+				<div class="footer-r-top darkgreen">
+					<div class="container">
+						<h3>Embrace the Strange</h3>
+						<p>Sending you content straight from the wild & weird minds behind Prismatic Plants. Sign up and receive a code for 10% off your first order.</p>
+						<form method="post" class="f-subscr">
+							<input type="text" placeholder="First name" value="">
+							<input type="email" placeholder="Email address (required)" value="">
+							<button type="submit" class="button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer-r-bottom">
+					<h3>Before You Go</h3>
+					<div class="container">
+						<p>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+						<p>Our products are made with Hemp and contain less than 0.3% THC. They are only intended for use if 18 years old and above.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
     </div>
 
 </body>
