@@ -67,6 +67,14 @@ p {
 	font-size: 1rem;
 }
 
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .container {
 	padding: 0 3.42rem;
 	margin: 0 auto;
@@ -84,6 +92,13 @@ p {
 	font-size: .84rem;
 	font-weight: bold;
 	background-color: transparent;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #0000009e;
+	box-shadow: 0px 0px 10px #0000009e;
+	text-decoration: none;
 }
 
 .list-buttons li {
@@ -120,6 +135,10 @@ p {
 	text-decoration: none;
 }
 
+.darkgreen a:hover {
+	text-decoration: underline;
+}
+
 .lightgreen {
 	background-color: #C2D8CC;
 	color: #1E4844;
@@ -130,8 +149,15 @@ p {
 	text-decoration: none;
 }
 
+.darkgreen a:hover, .lightgreen a:hover {
+	text-decoration: underline;
+}
+
 .header { 
 	height: 6.05rem;
+	width: 100%;
+	position: sticky;
+	top: 0;
 }
 
 .header-top {
@@ -207,9 +233,6 @@ p {
 .promo .button {
 	font-weight: normal;
 	margin: 1.35rem 0;
-}
-
-.clients {
 }
 
 .clients .container {
@@ -348,9 +371,6 @@ p {
 	text-align: center;
 }
 
-.violet h2 {
-}
-
 .violet .container {
 	display: flex;
 	justify-content: flex-start;
@@ -484,7 +504,6 @@ p {
 .clientitemlink {
 	display: none;
 	color: #1E4844;
-	text-decoration: underline;
 	text-transform: uppercase;
 	font-size: 0.68rem;
 }
@@ -495,6 +514,14 @@ p {
 	bottom: 1.1rem;
 	width: 100%;
 	text-align: center;
+}
+
+.clientitemlink:link, .clientitemlink:visited {
+	text-decoration: underline;
+}
+
+.clientitemlink:hover {
+	text-decoration: none;
 }
 
 .press-bottom {
